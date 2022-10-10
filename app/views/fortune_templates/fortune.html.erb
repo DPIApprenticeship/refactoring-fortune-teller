@@ -1,1 +1,10 @@
-<h1>Fortune</h1>
+<h1><%= @sign.capitalize %></h1>
+
+<p><%= @horoscope %></p>
+
+<p>Your lucky numbers for today are:</p>
+<ul>
+  <% @array_of_numbers.each do |num| %>
+    <li><%= num %></li>
+  <% end %>
+</ul>
